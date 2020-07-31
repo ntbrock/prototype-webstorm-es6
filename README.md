@@ -70,6 +70,47 @@ Proof: that dist/ directory had the compiled code!!!
 ## Agenda Session 2 - Exploring Mocha for Automated Testing
 
 
+### Babel Envrionment Cleanup from Session 1
+
+npx babel
+
+You have mistakenly installed the `babel` package, which is a no-op in Babel 6.
+
+On TB's workstation, found this was a global package:
+
+npm uninstall -g babel
+
+which babel should not return nothing
+
+Proper Package re-install
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install --save @babel/polyfill
+
+npx babel src --out-dir dist
+
+Package.json results in:
+
+```
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+```
+
+Successful tests:
+
+```
+$ ./node_modules/.bin/babel src --out-dir dist
+Successfully compiled 1 file with Babel (386ms).
+```
+
+```
+$ npx babel src --out-dir dist
+Successfully compiled 1 file with Babel (378ms).
+```
+
 ### Npm environment provisioning
 
 npm init -> package.json
