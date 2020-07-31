@@ -8,9 +8,9 @@ Babel Webstorm Configuration w IWP developers, exploring Es development best pra
 
 - Session 1: Webstorm and Babel for Transpiling ES6 (2020Jul24) 
 
-- Session 2: npm + mocha automated unit tests (2020Jul31)
+- Session 2: npm + Mocha automated unit tests (2020Jul31)
 
-- Es Modules
+- Session 3: EcmaScript Modules  (2020Aug14)
 
 - Theory: Browser/server duality (React.js)
 
@@ -266,11 +266,9 @@ Good idea: Have a unit test for every function that your module exposes!
 
 ### Extend Calculator to depend on math.js library
 
-Together!
-
 What is algorithm for RK4?
 
-
+We added this!  Did TDD, and fixed a bug!  All test now pass.
 
 ## Action Items:
 
