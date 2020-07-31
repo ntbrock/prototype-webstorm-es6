@@ -80,11 +80,14 @@ npm install --save-dev @babel/core
 
 npm install @babel/preset-env --save-dev
 
+.babelrc with @babel/preset-env
+
 See the updates to package.json,  plus creation of a package-lock.json
 
 Change to .gitignore:  node_modules/,  these are written by the --save-dev
 
 npm run failing:     echo "Error: no test specified" && exit 1
+
 
 ### Why Unit Testing?
 
