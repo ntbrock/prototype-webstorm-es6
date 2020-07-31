@@ -111,6 +111,13 @@ $ npx babel src --out-dir dist
 Successfully compiled 1 file with Babel (378ms).
 ```
 
+After a Webstorm restart, reconfigured my watcher to use npx and now working succesfully!
+
+Every time I edit src/, babel recompiles it into dist/
+
+![Webstorm Babel Watcher with npx](/screenshots/Webstorm Babel Watcher with npx.png)
+
+
 ### Npm environment provisioning
 
 npm init -> package.json
