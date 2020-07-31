@@ -94,7 +94,7 @@ npm init -> package.json
 Change to .gitignore:  node_modules/,  these are written by the --save-dev
 
 
-### Babel Envrionment Cleanup from Session 1
+### Babel Environment Cleanup from Session 1
 
 ```sh
 $ npx babel
@@ -107,6 +107,7 @@ On TB's workstation, found this was a global package:
 npm uninstall -g babel
 
 which babel should not return nothing
+
 
 #### Proper Package re-install
 
@@ -146,12 +147,16 @@ Every time I edit src/, babel recompiles it into dist/
 
 #### Setup Babel Sane Defaults
 
-.babelrc with @babel/preset-env
+.babelrc with @babel/preset-env  (Committed)
 
 See the updates to package.json,  plus creation of a package-lock.json
 
 
 ### Why Unit Testing?
+
+TDD - Test Driven Development
+
+BBD - Behavior Driven Development
 
 npm run failing:     echo "Error: no test specified" && exit 1
 
@@ -225,20 +230,39 @@ module.exports = {
 }
 ```
 
-### Exercise together: write new unit tests that flex the application's math.js usage
+Two different require syntaxes:
+
+```js
+// Node.js Require method 1 - Unbox the exports
+const { calcZero } = require('./calculator')
+console.log( "calculator.js: " + calcZero() );
+
+// Node.js Require method 2 - Entire module
+const calculator = require("./calculator")
+console.log( "calculator.js: " + calculator.calcZero() );
+```
 
 
+### Write new unit tests that flex the application's calculator.js 
+
+```
+Error: Cannot find module 'calculator'
+Require stack:
+- /Users/brockman/ncssm/git/prototype-webstorm-es6/test/calculator.js
+- /Users/brockman/ncssm/git/prototype-webstorm-es6/node_modules/mocha/lib/esm-utils.js
+- /Users/brockman/ncssm/git/prototype-webstorm-es6/node_modules/mocha/lib/mocha.js
+- /Users/brockman/ncssm/git/prototype-webstorm-es6/node_modules/mocha/lib/cli/one-and-dones.js
+```
+
+### Extend Calculator to depend on math.js library
+
+Together!
 
 ## Action Items:
 
 * Taylor - Get brockman@iwphys.org email setup
 
-* Taylor - Apply for Get educational licenses
+* Taylor - Apply for educational licenses
 
-* Git clone on the https://github.com/ntbrock/prototype-webstorm-es6/settings/access project.
-
-
-- 2020-21 Planning
-
-
+* Team - Git clone on the https://github.com/ntbrock/prototype-webstorm-es6/settings/access project.
 

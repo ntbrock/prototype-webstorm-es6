@@ -12,6 +12,10 @@ const arrow2 = (a) => a+1;
 const { sqrt } = require('mathjs')
 console.log( "Math.js: " + sqrt(-4).toString());
 
-
+// Node.js Require method 1 - Unbox the exports
 const { calcZero } = require('./calculator')
 console.log( "calculator.js: " + calcZero() );
+
+// Node.js Require method 2 - Entire module
+const calculator = require("./calculator")
+console.log( "calculator.js: " + calculator.calcZero() );
