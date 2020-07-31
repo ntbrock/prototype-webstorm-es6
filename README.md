@@ -70,11 +70,20 @@ Proof: that dist/ directory had the compiled code!!!
 ## Agenda Session 2 - Exploring Mocha for Automated Testing
 
 
+### Npm environment provisioning
+
+npm init -> package.json
+
+Change to .gitignore:  node_modules/,  these are written by the --save-dev
+
+
 ### Babel Envrionment Cleanup from Session 1
 
-npx babel
+```sh
+$ npx babel
 
 You have mistakenly installed the `babel` package, which is a no-op in Babel 6.
+```
 
 On TB's workstation, found this was a global package:
 
@@ -82,7 +91,7 @@ npm uninstall -g babel
 
 which babel should not return nothing
 
-Proper Package re-install
+#### Proper Package re-install
 
 npm install --save-dev @babel/core @babel/cli @babel/preset-env
 npm install --save @babel/polyfill
@@ -99,7 +108,7 @@ Package.json results in:
     "@babel/preset-env": "^7.11.0",
 ```
 
-Successful tests:
+#### Successful tests:
 
 ```
 $ ./node_modules/.bin/babel src --out-dir dist
@@ -118,34 +127,30 @@ Every time I edit src/, babel recompiles it into dist/
 ![Webstorm Babel Watcher with npx](https://raw.githubusercontent.com/ntbrock/prototype-webstorm-es6/master/screenshots/Webstorm%20Babel%20Watcher%20with%20npx.png)
 
 
-### Npm environment provisioning
-
-npm init -> package.json
-
-Reprovision Babel:
-
-npm install --save-dev @babel/core
-
-npm install @babel/preset-env --save-dev
-
-npm install @babel/polyfill --save-dev
+#### Setup Babel Sane Defaults
 
 .babelrc with @babel/preset-env
 
 See the updates to package.json,  plus creation of a package-lock.json
 
-Change to .gitignore:  node_modules/,  these are written by the --save-dev
-
-npm run failing:     echo "Error: no test specified" && exit 1
-
 
 ### Why Unit Testing?
+
+npm run failing:     echo "Error: no test specified" && exit 1
 
 ### Mocha Tests
 
 https://mochajs.org/
 
 npm install --save-dev mocha
+
+$ npm test
+
+### Math.js library
+
+$ npm install mathjs --save
+
+package.json: dependencies -vs- devDependencies
 
 
 
