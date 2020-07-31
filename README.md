@@ -80,6 +80,8 @@ npm install --save-dev @babel/core
 
 npm install @babel/preset-env --save-dev
 
+npm install @babel/polyfill --save-dev
+
 .babelrc with @babel/preset-env
 
 See the updates to package.json,  plus creation of a package-lock.json
