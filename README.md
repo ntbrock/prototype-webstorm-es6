@@ -115,7 +115,7 @@ After a Webstorm restart, reconfigured my watcher to use npx and now working suc
 
 Every time I edit src/, babel recompiles it into dist/
 
-![Webstorm Babel Watcher with npx](/screenshots/Webstorm Babel Watcher with npx.png)
+![Webstorm Babel Watcher with npx](screenshots/Webstorm Babel Watcher with npx.png)
 
 
 ### Npm environment provisioning
