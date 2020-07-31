@@ -1,15 +1,16 @@
 # prototype-webstorm-es6
-2020Jul24 Prototyping an Es6 Babel Webstorm Configuration w IWP developers
 
-# Session Notes
+Prototyping Es6 Development Environment Best Practices
 
-## 2020Jul24 IWP6 Summer Prep Call 
+Babel Webstorm Configuration w IWP developers, exploring Es development best practices like linting and automated testing.
 
-## Agenda
+# 2020Jul24 IWP6 Summer Prep Calls
+
+## Agenda Session 1 - Exploring Babel for Transpiling ES6
 
 ### Summer Updates
 
-Code academy career course, HTML , CSS , Javscript,  js with HTML, go into react app, handlebars.   IDE is Visual Code.
+Prep: Code academy career course, HTML, CSS, Javascript,  js with HTML, go into react app, handlebars.   IDE is Visual Code.
 
 ### Theory - Javascript, ES6
 
@@ -65,6 +66,22 @@ Arugment: babel src/main.js --out-dir dist --source-maps --plugins=@babel/plugin
 
 Proof: that dist/ directory had the compiled code!!!
    
+   
+## Agenda Session 2 - Exploring Mocha for Automated Testing
+
+
+### Npm environment provisioning
+
+npm init -> package.json
+
+### Why Unit Testing?
+
+### Mocha Tests
+
+
+
+
+
 
 # Future Topics
 
