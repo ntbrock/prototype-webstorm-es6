@@ -1,0 +1,23 @@
+{
+  "name": "prototype-webstorm-es6",
+  "version": "1.0.0",
+  "description": "Prototyping Es6 Development Environment Best Practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntbrock/prototype-webstorm-es6.git"
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript6"
+  ],
+  "author": "Taylor Brockman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntbrock/prototype-webstorm-es6/issues"
+  },
+  "homepage": "https://github.com/ntbrock/prototype-webstorm-es6#readme"
+}
