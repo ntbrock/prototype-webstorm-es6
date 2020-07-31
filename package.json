@@ -4,7 +4,8 @@
   "description": "Prototyping Es6 Development Environment Best Practices",
   "main": "src/main.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node src/main.js"
   },
   "repository": {
     "type": "git",

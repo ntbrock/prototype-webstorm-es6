@@ -4,9 +4,27 @@ Prototyping Es6 Development Environment Best Practices
 
 Babel Webstorm Configuration w IWP developers, exploring Es development best practices like linting and automated testing.
 
-# 2020Jul24 IWP6 Summer Prep Calls
+# IWP6 Ecmascript6 Summer Prep Topics
 
-## Agenda Session 1 - Exploring Babel for Transpiling ES6
+- Session 1: Webstorm and Babel for Transpiling ES6 (2020Jul24) 
+
+	https://www.jetbrains.com/webstorm/download/
+
+- Session 2: npm + mocha automated unit tests (2020Jul31)
+
+- Es Modules
+
+- Theory: Browser/server duality (React.js)
+
+- Webpack
+
+- Node ->  React
+
+- Javascript running inside jvm : Nashorn, J2V8
+
+
+
+## Session 1: Webstorm and Babel for Transpiling ES6 (2020Jul24) 
 
 ### Summer Updates
 
@@ -67,8 +85,7 @@ Arugment: babel src/main.js --out-dir dist --source-maps --plugins=@babel/plugin
 Proof: that dist/ directory had the compiled code!!!
    
    
-## Agenda Session 2 - Exploring Mocha for Automated Testing
-
+## Session 2: npm + mocha automated unit tests (2020Jul31)
 
 ### Npm environment provisioning
 
@@ -146,33 +163,71 @@ npm install --save-dev mocha
 
 $ npm test
 
+npm test now works!
+
 ### Math.js library
 
 $ npm install mathjs --save
 
 package.json: dependencies -vs- devDependencies
 
+Runs in Webstorm:
+```
+/usr/local/bin/node /Users/brockman/ncssm/git/prototype-webstorm-es6/src/main.js
+2i
+Taylor was here @ 1442
+```
+
+Runs in console:
+
+```
+$ npm start
+
+2i
+Taylor was here @ 1442
+```
+
+### Second source file: Calculator.js
+
+We will be defining a set of common functions that can be used anywhere in our application.
+
+Created calculator.js, defined calcZero
+
+```
+calcZero();
+^
+
+ReferenceError: calcZero is not defined
+    at Object.<anonymous> (/Users/brockman/ncssm/git/prototype-webstorm-es6/src/main.js:10:1)
+    at Module._compile (internal/modules/cjs/loader.js:1147:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1167:10)
+    at Module.load (internal/modules/cjs/loader.js:996:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:896:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! prototype-webstorm-es6@1.0.0 start: `node src/main.js`
+npm ERR! Exit status 1
+npm ERR!
+```
+
+The secret is using module.exports, and require from the main.js:
+
+```
+module.exports = {
+
+    calcZero: function() {
+        console.log("Calc Zero Called");
+        return 0;
+    }
+
+}
+```
+
+### Exercise together: write new unit tests that flex the application's math.js usage
 
 
-# Future Topics
-
-- write JS automated unit tests.
-
-- Theory: Browser/server duality (React.js)
-
-- Webpack
-
-- Node ->  React
-
-- Two session out:  Javascript running inside jvm.
-
-- Nashorn
-
-- J2V8
-
-- Webstorm IDE
-
-	https://www.jetbrains.com/webstorm/download/
 
 ## Action Items:
 
