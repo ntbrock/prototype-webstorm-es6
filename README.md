@@ -161,9 +161,9 @@ See the updates to package.json,  plus creation of a package-lock.json
 
 ### Why Unit Testing?
 
-TDD - Test Driven Development
+TDD - Test Driven Development - Begin with is breaking tests that don't work.
 
-BBD - Behavior Driven Development
+BDD - Behavior Driven Development
 
 npm run failing:     echo "Error: no test specified" && exit 1
 
@@ -181,7 +181,7 @@ npm test now works!
 
 $ npm install mathjs --save
 
-package.json: dependencies -vs- devDependencies
+package.json: dependencies -vs- devDependencies  ( --save -vs- --save-dev )
 
 Runs in Webstorm:
 ```
@@ -264,6 +264,8 @@ Require stack:
 ### Extend Calculator to depend on math.js library
 
 Together!
+
+Good idea: Have a unit test for every function that your module exposes!
 
 ## Action Items:
 

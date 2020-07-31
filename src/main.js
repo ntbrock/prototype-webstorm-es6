@@ -14,8 +14,8 @@ console.log( "Math.js: " + sqrt(-4).toString());
 
 // Node.js Require method 1 - Unbox the exports
 const { calcZero } = require('./calculator')
-console.log( "calculator.js: " + calcZero() );
+console.log( "calculator.js:17 " + calcZero() );
 
 // Node.js Require method 2 - Entire module
 const calculator = require("./calculator")
-console.log( "calculator.js: " + calculator.calcZero() );
+console.log( "calculator.js:21 " + calculator.calcZero() );
