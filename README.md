@@ -74,9 +74,27 @@ Proof: that dist/ directory had the compiled code!!!
 
 npm init -> package.json
 
+Reprovision Babel:
+
+npm install --save-dev @babel/core
+
+npm install @babel/preset-env --save-dev
+
+See the updates to package.json
+
+Change to .gitignore:  node_modules/,  these are written by the --save-dev
+
+
+
+
+
+
+
 ### Why Unit Testing?
 
 ### Mocha Tests
+
+https://mochajs.org/
 
 
 
