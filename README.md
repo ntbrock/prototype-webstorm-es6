@@ -20,6 +20,7 @@ Babel Webstorm Configuration w IWP developers, exploring Es development best pra
 
 - Javascript running inside jvm : Nashorn, J2V8
 
+- Addendum : Nodejs install on Ubuntu 18.04 LTS
 
 
 ## Session 1: Webstorm and Babel for Transpiling ES6 (2020Jul24) 
@@ -266,9 +267,24 @@ Together!
 
 ## Action Items:
 
-* Taylor - Get brockman@iwphys.org email setup
+= Taylor - Provisioned node v14 + npm on the iwp6 Ubuntu linux cloud droplet
 
-* Taylor - Apply for educational licenses
+= Taylor - Get brockman@iwphys.org email setup
+
+= Taylor - Apply for educational/opensource licenses x3
+Your JetBrains Open Source License Request. Request ID = 31072020/5510798
+
+Student Application Form: https://www.jetbrains.com/shop/eform/students
 
 * Team - Git clone on the https://github.com/ntbrock/prototype-webstorm-es6/settings/access project.
+
+
+## Addendum : Nodejs install on Ubuntu 18.04 LTS
+
+```shell script
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+sudo apt-get install gcc g++ make
+sudo apt-get install -y nodejs
+```
+
 
