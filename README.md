@@ -1,14 +1,12 @@
 # prototype-webstorm-es6
 
-Prototyping Es6 Development Environment Best Practices
+Ecmascript6 Development Environment Best Practices Webstorm Babel Mocha
 
 Babel Webstorm Configuration w IWP developers, exploring Es development best practices like linting and automated testing.
 
 # IWP6 Ecmascript6 Summer Prep Topics
 
 - Session 1: Webstorm and Babel for Transpiling ES6 (2020Jul24) 
-
-	https://www.jetbrains.com/webstorm/download/
 
 - Session 2: npm + mocha automated unit tests (2020Jul31)
 
@@ -36,7 +34,7 @@ Functions - Async, Fired from timers, from ui events, from console. (in some iwp
 
 Callbacks -  Fired during iteration, in the future!  Can be decarled as anonymous. (not assigned to an identifier)
 
-ES6: "Fat Arrow" or "Rocket" or "Arrow Functions"
+ES6: "Fat Arrow" or "Rocket" or "Arrow Functions" or "Lambda"
 
 ### Transpiling
 
@@ -53,12 +51,19 @@ Compile = Transpiler
 			
 Deploy = Enable everyone on the team to deploy to prod.
 
+### Webstorm IDE
+
+https://www.jetbrains.com/webstorm/download/
+
+
 ### Babel
 
 https://babeljs.io/docs/en/babel-cli/
 
 ```sh
-npm install --save-dev @babel/core @babel/cli
+npm uninstall -g babel
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install --save @babel/polyfill
 npm install --save-dev @babel/plugin-transform-arrow-functions
 ```
 
@@ -72,6 +77,7 @@ This is an outdated guide, but good overview:
 
 https://mcculloughwebservices.com/2015/06/14/webstorm-babel-plugin/
 
+
 #### MacOSX
 
 Program: /usr/local/bin/npx
@@ -83,8 +89,8 @@ Then try this!
 Arugment: babel src/main.js --out-dir dist --source-maps --plugins=@babel/plugin-transform-arrow-functions
 
 Proof: that dist/ directory had the compiled code!!!
-   
-   
+
+
 ## Session 2: npm + mocha automated unit tests (2020Jul31)
 
 ### Npm environment provisioning
