@@ -21,10 +21,11 @@ module.exports = {
             const k4 = f(t + h, y + h * k3);
 
 
-            const yp = y + (1 / 6) * h * (k1 + k2 + k3 + k4)
+            const yp = y + (1 / 6) * h * (k1 + 2 * k2 + 2 * k3 + k4);
             const tp = t + h
 
-            console.log("calculator.js:27> [step="+step+"] t : "+ t +   "  y: " + y)
+            //console.log("calculator.js:27> [step="+step+"] t : "+ t +   "  y: " + y);
+            //console.log("calculator.js:27> [step="+step+"] k1: "+ k1 + " k2: "+ k2 + " k3: "+ k3 + " k4: "+ k4 + " ");
             t = tp;
             y = yp;
         }
