@@ -261,11 +261,16 @@ Require stack:
 - /Users/brockman/ncssm/git/prototype-webstorm-es6/node_modules/mocha/lib/cli/one-and-dones.js
 ```
 
+Good idea: Have a unit test for every function that your module exposes!
+
+
 ### Extend Calculator to depend on math.js library
 
 Together!
 
-Good idea: Have a unit test for every function that your module exposes!
+What is algorithm for RK4?
+
+
 
 ## Action Items:
 
