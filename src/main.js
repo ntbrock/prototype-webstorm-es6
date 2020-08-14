@@ -5,15 +5,26 @@ console.log("Taylor was here @ 1442");
 // Babel.js transpile of an arrow function
 const arrow2 = (a) => a+1;
 
-// Call our new CommonJS module
-
+// Call our new CommonJS module - rquire syntax
+/*
 const animationReaderFactory = require("./animation-reader");
-
 const animationReader = animationReaderFactory();
-
 const animation = animationReader.parseJson( { animationName: 'redball01.iwp', description: 'a very simple DVAT animation'});
-
 console.log("animation-reader.jks: " + JSON.stringify(animation,null,4) );
+*/
+
+import * as animationPlayer from './animation-player.mjs';
+
+console.log(`animation-reader:18> animationPlayer: ${JSON.stringify(animationPlayer,null,4)}`);
+
+let player =
+    animationPlayer.initialize({"animationName":"redball02.iwp"});
+
+console.log(`animation-reader:23> player: ${JSON.stringify(player,null,4)}`);
+
+player = animationPlayer.stepForward(player);
+
+console.log(`animation-reader:27> player: ${JSON.stringify(player,null,4)}`);
 
 
 

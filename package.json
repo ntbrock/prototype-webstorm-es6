@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Prototyping Es6 Development Environment Best Practices",
   "main": "src/main.js",
+  "type": "module",
   "scripts": {
     "test": "mocha",
     "start": "node src/main.js"
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/ntbrock/prototype-webstorm-es6#readme",
   "dependencies": {
+    "lodash": "^4.17.20",
+    "lodash-es": "^4.17.15",
     "mathjs": "^7.1.0"
   },
   "devDependencies": {

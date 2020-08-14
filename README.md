@@ -314,8 +314,15 @@ Webstorm - Preferes-> Languages + Toolkits -> Node.js -> Active coding assistanc
     
     import is ESM Ecmascript modules.
 
-1417> Successful built a CommonJs module , with factory pattern, now it's time to decale an esm !
+1417> Successful built a CommonJs module , with factory pattern, now it's time to declare an esm !
 
+https://nodejs.org/api/esm.html
+
+Struggled with the lodash include as esm
+
+Found that once you become an esm, the requre func is no longer available, have to use import + export.
+
+https://exploringjs.com/impatient-js/ch_modules.html#importing
 
     
     
