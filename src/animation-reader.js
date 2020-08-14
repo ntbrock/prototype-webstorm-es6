@@ -7,15 +7,22 @@
  * Isolated memory space, Can defined what's public - 'api'
  */
 
+const os = require('os');
+
 
 module.exports = function() {
 
-    console.log("hi from animation-reader.js")
+    return {
+        reader: true,
+        parseJson: function(json) {
+            // 300 lines of:
+            // Defensive code
+            // Building all the calculators
+            // Checking for circular dependencies
+            return { parsed: true, animationName: json.animationName }
 
-    return "really,, hello!!!"
+        }
+
+    }
 }
-
-
-
-
 

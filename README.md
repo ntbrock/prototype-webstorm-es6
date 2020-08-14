@@ -310,10 +310,13 @@ export * from '../../es/entry/mainAny'
 
 MathJs can import either way! Cool.
 
-    
+Webstorm - Preferes-> Languages + Toolkits -> Node.js -> Active coding assistance for node.js to make warnigns go away.    
     
     import is ESM Ecmascript modules.
-    
+
+1417> Successful built a CommonJs module , with factory pattern, now it's time to decale an esm !
+
+
     
     
 - module.exports and inner memory / public API

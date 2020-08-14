@@ -7,8 +7,13 @@ const arrow2 = (a) => a+1;
 
 // Call our new CommonJS module
 
-const animationReader = require("./animation-reader");
-console.log("animation-reader.jks: " + animationReader() );
+const animationReaderFactory = require("./animation-reader");
+
+const animationReader = animationReaderFactory();
+
+const animation = animationReader.parseJson( { animationName: 'redball01.iwp', description: 'a very simple DVAT animation'});
+
+console.log("animation-reader.jks: " + JSON.stringify(animation,null,4) );
 
 
 
