@@ -12,14 +12,17 @@ Babel Webstorm Configuration w IWP developers, exploring Es development best pra
 
 - Session 3: EcmaScript Modules  (2020Aug14)
 
-- Session 4: Promises and async  (2020Aug21?)
+- Session 4: Module Design Session for IWP7 (2020Aug22)
+    
+    Feature request: Function Calculators,  RK4 Calculator
 
+- Session 5: Promises and async
+
+- Session 6: React.js and the Designer
 
 - Theory: Browser/server duality (React.js)
 
 - Webpack
-
-- Node ->  React
 
 - Javascript running inside jvm : Nashorn, J2V8
 
@@ -287,14 +290,11 @@ We added this!  Did TDD, and fixed a bug!  All test now pass.
     * Taylor> Udgrade node to version 14!  Locally is 13.
     $ brew upgrade node
     
-    
 
 - require -vs- import
 
     Require is CommonJS
     
-## Require
-
 https://nodejs.org/api/modules.html
 
 Dove into Math.js, package.json >  "main": "main/es5",  <-- CommonJS
@@ -312,7 +312,7 @@ MathJs can import either way! Cool.
 
 Webstorm - Preferes-> Languages + Toolkits -> Node.js -> Active coding assistance for node.js to make warnigns go away.    
     
-    import is ESM Ecmascript modules.
+import is ESM Ecmascript modules.
 
 1417> Successful built a CommonJs module , with factory pattern, now it's time to declare an esm !
 
@@ -329,21 +329,28 @@ https://exploringjs.com/impatient-js/ch_modules.html#importing
 import MathJs from 'mathjs'
 const { sin } = MathJs;
     
-    
 - module.exports and inner memory / public API
 
 - bacon.js that supports both
 
 - Taylor's new app!! (sails.js!)
 
+Really cool to learn!   Segfault from Node 13 -> node 14 in brew.
+
+Able to connect to databases, able to write + read from mongo.
+
+Reactive application - filesystem, schedules, commits. 
+
+Friday Aug 21 Yes - 
+
+More interactive: Make something together, build a piece of the application. start with that. Learn by doing!!  Decide on commonJs.
+
 Class starts Aug 25, Cohort model, with fully remote option.  Cohort B Oct 11.
 
 
-## Session 4: Promises and async
+## Session 4: Module Design Session for IWP7 
 
-
-
-
+## Session 5: Promises and async
 
 
 ## Action Items:
