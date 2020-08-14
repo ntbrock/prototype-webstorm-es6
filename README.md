@@ -12,6 +12,9 @@ Babel Webstorm Configuration w IWP developers, exploring Es development best pra
 
 - Session 3: EcmaScript Modules  (2020Aug14)
 
+- Session 4: Promises and async  (2020Aug21?)
+
+
 - Theory: Browser/server duality (React.js)
 
 - Webpack
@@ -269,6 +272,65 @@ Good idea: Have a unit test for every function that your module exposes!
 What is algorithm for RK4?
 
 We added this!  Did TDD, and fixed a bug!  All test now pass.
+
+
+## Session 3: EcmaScript modules
+
+- CommonJS -vs- ESM
+
+    Ecmascript modules.
+    
+    Node -> initial ideas, got formatlized into CommonJS,  other libs, require.js, browserfy.
+    
+    https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-get-along-9617135eeca1
+    
+    * Taylor> Udgrade node to version 14!  Locally is 13.
+    $ brew upgrade node
+    
+    
+
+- require -vs- import
+
+    Require is CommonJS
+    
+## Require
+
+https://nodejs.org/api/modules.html
+
+Dove into Math.js, package.json >  "main": "main/es5",  <-- CommonJS
+                                    "module": "main/esm",  <--  Alternative. 
+
+Require when it doesn't find any relative pathed .js files, it dives into node_modules, finds mathjs path -> looks inside package.json.  If no package.json -> then look for index.js.
+
+// Es5
+module.exports = require('../../lib/entry/mainAny')
+
+// Es6
+export * from '../../es/entry/mainAny'
+
+MathJs can import either way! Cool.
+
+    
+    
+    import is ESM Ecmascript modules.
+    
+    
+    
+- module.exports and inner memory / public API
+
+- bacon.js that supports both
+
+- Taylor's new app!! (sails.js!)
+
+Class starts Aug 25, Cohort model, with fully remote option.  Cohort B Oct 11.
+
+
+## Session 4: Promises and async
+
+
+
+
+
 
 ## Action Items:
 
