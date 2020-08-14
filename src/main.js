@@ -23,9 +23,16 @@ let player =
 console.log(`animation-reader:23> player: ${JSON.stringify(player,null,4)}`);
 
 player = animationPlayer.stepForward(player);
-
 console.log(`animation-reader:27> player: ${JSON.stringify(player,null,4)}`);
 
+player = animationPlayer.stepForward(player);
+console.log(`animation-reader:27> player: ${JSON.stringify(player,null,4)}`);
+
+player = animationPlayer.stepForward(player);
+console.log(`animation-reader:27> player: ${JSON.stringify(player,null,4)}`);
+
+player = animationPlayer.stepForward(player);
+console.log(`animation-reader:27> player: ${JSON.stringify(player,null,4)}`);
 
 
 /*

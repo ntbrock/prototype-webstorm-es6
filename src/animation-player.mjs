@@ -10,7 +10,8 @@
 
 // const _ = require('lodash');
 
-import * as maths from 'mathjs';
+import Lodash from 'lodash';
+const { extend } = Lodash
 
 import MathJs from 'mathjs'
 const { sin } = MathJs;
@@ -29,10 +30,7 @@ function stepForward(player) {
 
     console.log(`maths sin: ${ sin(1) }`);
 
-
-
-    return { tick: 1 }
-    //return extend(player, { tick: player.tick+1 });
+    return extend(player, { tick: player.tick+1 });
 }
 
 

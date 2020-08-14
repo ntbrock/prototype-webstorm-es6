@@ -324,6 +324,10 @@ Found that once you become an esm, the requre func is no longer available, have 
 
 https://exploringjs.com/impatient-js/ch_modules.html#importing
 
+2 line syntax:
+
+import MathJs from 'mathjs'
+const { sin } = MathJs;
     
     
 - module.exports and inner memory / public API
