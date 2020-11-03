@@ -7,6 +7,8 @@
   button { padding: 1rem; }
   button.go { background-color: #0f0; }
   button.stop { background-color: #f66; }
+  button.paused { background-color: #666; }
+
 </style>
 
 <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
@@ -23,13 +25,26 @@
 
     <button class="go">Let's Go!</button>
 
-    <button class="stop">Stop the presses!</button>
+    <button id="stopButton" class="stop">Stop the presses!</button>
 
   </div>
-  
+
 
   <script type="text/javascript">
   $("#messages").append("<p>Loaded Jquery!</p>");
+
+  $(".stop").on("click", function(e) {
+
+    const target = $(e.target);
+    
+    target
+            .removeClass("stop")
+            .addClass("paused");
+
+    console.log("Stopped! ID: ", target.attr("id"));
+
+  });
+
 
   </script>
 </body>

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Prototyping Es6 Development Environment Best Practices",
   "main": "src/main.js",
-  "type": "module",
   "scripts": {
     "test": "mocha",
     "start": "node src/main.js"
